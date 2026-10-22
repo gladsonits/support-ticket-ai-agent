@@ -25,7 +25,7 @@ app.add_middleware(
 )
 
 # Optional: Verify it loaded correctly without printing the full secret
-print(f"Token loaded: {os.environ.get('HF_TOKEN') is not None}")
+print(f"Token loaded: {os.environ.get('GROQ_API_KEY') is not None}")
 
 # 1. Compile the workflow once at app startup
 # This produces the compiled runnable that has .ainvoke() available
